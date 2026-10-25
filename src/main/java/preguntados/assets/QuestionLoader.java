@@ -25,7 +25,24 @@ public class QuestionLoader {
             "wrong answer1", "right answer2", "wrong answer3", "wrong answer4"
         }
     };
+// TEMA DE JAVASCRIPT
+// Descripción: Almacena las preguntas, el índice de la respuesta correcta 
+// y las opciones múltiples utilizando una matriz de cadenas (String[][]).
+// Se integra de forma dinámica al cargador de categorías del juego.
 
+    private static final String TOPIC_JAVASCRIPT_NAME = "JavaScript";
+    private static final String[][] JAVASCRIPT = {
+        {"¿Qué función muestra un mensaje en consola?", "1", "console.log()", "consol.log()", "console.lgo()"},
+        {"¿Cómo se declara una variable moderna en JavaScript?", "2", "variable nombre;", "let nombre;", "vart nombre;"},
+        {"¿Qué palabra clave se utiliza para declarar constantes?", "3", "constant", "constt", "const"},
+        {"¿Qué símbolo se usa para comentarios de una línea?", "1", "// comentario", "\\ comentario", "## comentario"},
+        {"¿Qué método muestra una ventana emergente?", "2", "prompt()", "alert()", "alret()"},
+        {"¿Qué función solicita datos al usuario?", "1", "prompt()", "imput()", "promt()"},
+        {"¿Cómo se escribe correctamente una condición?", "3", "if x > 5", "if x => 5", "if (x > 5)"},
+        {"¿Qué operador compara valor y tipo?", "2", "==", "===", "="},
+        {"¿Qué estructura repite instrucciones varias veces?", "1", "for", "fro", "iff"},
+        {"¿Cómo se convierte un texto a número entero?", "3", "parseint()", "ParseInt()", "parseInt()"}
+    };
     // -----------------------------------------------------------------------
     
     // Esta función será llamada por la clase dedicada a 
