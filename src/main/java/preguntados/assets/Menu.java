@@ -11,7 +11,7 @@ public class Menu {
     // indicaciones de qué hacer y la posibilidad de eligir la clase de preguntas a responder
     // una vez seleccionado todo, se llamará a Game() para iniciar la lógica del bucle de juego
     
-    // TODO!!!: solicitar el nombre del jugador e instanciarlo
+    // TODO!!!: solicitar el nombre del jugador e instanciar Player()
 
     public void showMainMenu() {
         QuestionLoader QLoader = new QuestionLoader();
