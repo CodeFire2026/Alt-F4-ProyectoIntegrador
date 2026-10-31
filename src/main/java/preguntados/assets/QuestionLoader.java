@@ -67,6 +67,42 @@ public class QuestionLoader {
         {"¿Qué estructura repite instrucciones varias veces?", "0", "for", "fro", "iff"},
         {"¿Cómo se convierte un texto a número entero?", "2", "parseint()", "ParseInt()", "parseInt()"}
     };
+    
+    // TEMA DE JAVA
+    private static final String TOPIC_JAVA_NAME = "Java";
+    private static final String[][] JAVA = {
+        {"¿Cuál es el punto de entrada de un programa Java?", "1",
+            "start()", "public static void main(String[] args)", "run()", "init()"
+        },
+        {"¿Qué palabra clave se usa para heredar de una clase?", "2",
+            "implements", "inherits", "extends", "super"
+        },
+        {"¿Qué tipo primitivo ocupa 8 bits?", "0",
+            "byte", "short", "int", "long"
+        },
+        {"¿Cuál es la diferencia entre == y .equals() en objetos?", "3",
+            "Son exactamente iguales", "== compara contenido y .equals() referencia", ".equals() solo funciona con String", "== compara referencia y .equals() contenido"
+        },
+        {"¿Qué método de String devuelve la cantidad de caracteres?", "0",
+            "length()", "size()", "count()", "getLength()"
+        },
+        {"¿Qué palabra clave evita que una clase sea heredada?", "2",
+            "static", "private", "final", "sealed"
+        },
+        {"¿Qué imprime el siguiente código?\n    String a = \"hola\";\n    String b = \"hola\";\n    System.out.println(a == b);", "0",
+            "true", "false", "error de compilación", "null"
+        },
+        {"¿Cuál es el resultado de la siguiente expresión?\n    int x = 5 / 2;", "1",
+            "2.5", "2", "3", "error"
+        },
+        {"¿Qué característica define a un constructor en Java?", "1",
+            "Debe declararse con tipo de retorno void", "Tiene el mismo nombre que la clase y no tiene tipo de retorno", "Solo puede ser private", "Se invoca con la palabra clave new desde dentro de la clase"
+        },
+        {"¿Qué excepción se lanza al acceder a un índice inválido de un array?", "0",
+            "ArrayIndexOutOfBoundsException", "NullPointerException", "IndexException", "ArrayException"
+        },
+    };
+    
     // -----------------------------------------------------------------------
     
     // Esta función será llamada por la clase dedicada a 
@@ -82,7 +118,7 @@ public class QuestionLoader {
             new Category(CAT_PROGRAMMING_NAME, new Topic[] {
                 buildTopic(TOPIC_PYTHON_NAME, PYTHON),
                 buildTopic(TOPIC_JAVASCRIPT_NAME, JAVASCRIPT),
-                // buildTopic("Java", JAVA), // otro topico de ejemplo
+                buildTopic(TOPIC_JAVA_NAME, JAVA), // otro topico de ejemplo
             }),
         };
     }
