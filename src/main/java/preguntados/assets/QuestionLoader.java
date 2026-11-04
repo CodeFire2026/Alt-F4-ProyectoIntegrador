@@ -103,6 +103,46 @@ public class QuestionLoader {
         },
     };
     
+    // TEMA: DESARROLLO WEB - HTML  CSS ...//
+    private static final String TOPIC_DESARROLLO_WEB = "WEB";
+    private static final String [][] WEB = {
+        {"¿Que elementos y programas necesitamos como minimo para comenzar a crear una pagina WEB?", "0",
+           "Una computadora, un editor de codigo como Visual Studio Code y un navegador como Google Chrome.", "Una computadora, un programa para editar videos y una impresora.", 
+           "Solamente una conexión a Internet y una cuenta de correo electrónico.", "Un servidor de base de datos y un programa de diseño 3D."
+       },
+        {"¿Cuando comenzamos a crear una página web con HTML, qué declaración debemos escribir al principio del documento?", "1",
+            "<html5>", "<!DOCTYPE html>", "<head>", "<body>"
+        },
+        {"¿Que etiqueta HTML contiene el contenido principal que vemos cuando ingresamos a una pagina WEB?", "3",
+            "<head>", "<title>", "<html>", "<body>"
+        },
+        {"¿Para que utilizamos CSS cuando estamos desarrollando una pagina web?", "1",
+            "Para guardar informacion de los usuarios.", "Para modificar la apariencia de la pagina, como colores, tamaños y distribución.", "Para crear archivos HTML automáticamente.", 
+            "Para conectar la pagina con Internet."
+        },
+        {"¿Que etiqueta utilizamos para vincular un archivo CSS externo con nuestro documento HTML?", "2",
+            "<style>", "<script>", "<link>", "<css>"
+        },
+        {"¿Que propiedad CSS utilizamos cuando queremos cambiar el color de un texto?", "0",
+            "color", "background-color", "font-size", "text-align"
+        },
+        {"¿Que etiqueta HTML utilizamos para insertar una imagen en nuestra pagina WEB?", "1",
+            "<image>", "<img>", "<picture-img>", "<src>"
+        },
+        {"¿Para que utilizamos una carpeta llamada ASSETS dentro de un proyecto WEB?", "3",
+            "Para guardar solamente archivos HTML.", "Para almacenar las hojas de estilos CSS.", "Para guardar los programas utilizados en el proyecto.", 
+            "Para organizar imágenes, iconos y otros recursos que utiliza la página."
+        },
+        {"Si nuestra pagina WEB se ve bien en una computadora, pero se desordena al abrirla desde un celular, ¿que herramienta de CSS podemos utilizar para adaptar su presentación?", "2",
+            "Los comentarios HTML.", "Las etiquetas de título.", "Las Media Queries.", "Los atributos alt."
+        },
+        {"¿Para que utilizamos display: flex en CSS cuando queremos organizar los elementos de una pagina?", "1",
+            "Para cambiar el color de fondo de los elementos.", "Para distribuir y organizar los elementos dentro de un contenedor.", 
+            "Para insertar imagenes automaticamente.", "Para modificar el tamaño de los archivos HTML."
+        }, 
+    };
+    
+    
     // -----------------------------------------------------------------------
     
     // Esta función será llamada por la clase dedicada a 
@@ -119,6 +159,7 @@ public class QuestionLoader {
                 buildTopic(TOPIC_PYTHON_NAME, PYTHON),
                 buildTopic(TOPIC_JAVASCRIPT_NAME, JAVASCRIPT),
                 buildTopic(TOPIC_JAVA_NAME, JAVA), // otro topico de ejemplo
+                buildTopic(TOPIC_DESARROLLO_WEB, WEB),
             }),
         };
     }
@@ -143,4 +184,5 @@ public class QuestionLoader {
         }
         return new Topic(topic_name, questions);
     }
+
 }
