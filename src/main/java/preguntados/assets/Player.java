@@ -49,12 +49,19 @@ public class Player {
     }
     
     // Lectura por teclado
-    // Lee un entero mostrando un mensaje.
-    // MEJORAR: Que no se rompa el programa cuando el usuario tipea algo que
-    // no es un entero ("abc", etc.).
+    // Lee un entero. Si el usuario tipea algo que no es un entero, muestra un 
+    // mensaje y vuelve a pedir la entrada.
     public int readInt(String prompt) {
-        System.out.print(prompt);
-        return Integer.parseInt(this.scanner.nextLine());
+        while (true) { // Bucle infinito
+            System.out.print(prompt);
+            try {
+            // nextLine() devuelve lo tipeado como String; parseInt lo convierte a int.
+            // Si no es un número válido, tira NumberFormatException.
+                return Integer.parseInt(this.scanner.nextLine()); // Solo escapa si tipea un entero.
+            } catch (NumberFormatException e) { // Solo llegamos acá si la conversión falló.
+                System.out.println("Eso no es un número entero. Intentá de nuevo.");
+            }
+        }
     }
 
     // Pide al usuario una opción entre 1 y max, valida el rango, y la guarda como índice (base 0)
