@@ -29,4 +29,10 @@ public class Question {
     public boolean answerIsCorrect(int player_answer) {
         return player_answer == this.correct_answer_index;
     }
+    
+    // Necesario para que Game pueda mostrarle al jugador cuál era la correcta 
+    // cuando falla.
+    public String getCorrectAnswer() {
+        return this.options[this.correct_answer_index];
+    }
 }
