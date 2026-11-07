@@ -68,7 +68,6 @@ public class Player {
     // Se usa para Game. (Podría usarse para elegir categoría en Menú).
     public void setPlayerChoice(int max) {
         int input;
-        max = 4;
         do {
             input = readInt("Opción: ");
             if (input < 1 || input > max) {
