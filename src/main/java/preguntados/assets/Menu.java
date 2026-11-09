@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class Menu {
     // Constantes de texto que nunca cambian
     private static final String GAME_TITLE = "~------~ TRIVIA ~------~";
-    private static final String GAME_INTRO = "Elija una categoria!";
+    private static final String GAME_INTRO = "Bienvenidos a la TRIVIA!";
+    
 
     // Metodo para mostrar el menu principal, consiste del nombre del juego,
     // indicaciones de qué hacer y la posibilidad de eligir la clase de preguntas a responder
     // una vez seleccionado todo, se llamará a Game() para iniciar la lógica del bucle de juego
     
-    // TODO!!!: solicitar el nombre del jugador e instanciar Player()
 
     public void showMainMenu() {
                // Creamos el Scanner para leer lo que escribe el usuario...//
@@ -25,13 +25,13 @@ public class Menu {
         System.out.println(GAME_INTRO);
 
         // Pedimos el nombre del jugador...//
-        System.out.print("Ingresa tu nombre: ");
+        System.out.println("Ingresa tu nombre: ");
         String playerName = scanner.nextLine().trim();
 
         // Comprobamos que el jugador haya escrito un nombre...//
         while (playerName.isEmpty()) {
             System.out.println("El nombre no puede estar vacio.");
-            System.out.print("Ingresa tu nombre: ");
+            System.out.println("Ingresa tu nombre:");;
             playerName = scanner.nextLine().trim();
         }
 
