@@ -3,8 +3,8 @@ package preguntados.assets;
 // Clase que se relaciona directamente con un tema
 // Por ej. la categoria "Programación" contendrá los temas "Python", "Java", etc.
 public class Category {
-    private String name; // nombre de la categoria por ej. "Programación", "Geografía", "Matemática"
-    private Topic[] topics;
+    private final String name; // nombre de la categoria por ej. "Programación", "Geografía", "Matemática"
+    private final Topic[] topics;
 
     public Category(String name, Topic[] topics) {
         this.name = name;
